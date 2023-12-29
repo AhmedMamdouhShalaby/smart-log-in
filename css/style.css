@@ -1,0 +1,67 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #eee;
+}
+
+
+.half-of-bg-log {
+    background-image: url(../4892802.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.half-of-bg-sign {
+    background-image: url(../user-verification-unauthorized-access-prevention-private-account-authentication-cyber-security-people-entering-login-password-safety-measures_335657-3530.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center center;
+}
+
+.half-of-content {
+    background: linear-gradient(349deg, rgb(131, 131, 130), rgb(150, 136, 136));
+}
+
+/* popup start*/
+
+.overlay,
+.overlayTwo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup,
+.popupTwo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.overlay.open,
+.overlayTwo.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* popup end*/
+#welcomeUser {
+    font-size: 3rem;
+}
